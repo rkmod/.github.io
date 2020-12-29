@@ -45,8 +45,13 @@ function updateSales(salest) {
 }
 
 function handleRefresh() {
-    var url = "http://gumball.wickedlysmart.com" + 
+    /*var url = "http://gumball.wickedlysmart.com" + 
     "?callback=updateSales" + 
+    "&lastreporttime=" + lastReportTime +
+    "&random=" + (new Date()).getTime();*/
+    
+   var url = "https://github.com/rkmod/.github.io/blob/master/MightyGumball/sales.json"
+   ?callback=updateSales" + 
     "&lastreporttime=" + lastReportTime +
     "&random=" + (new Date()).getTime();
 
